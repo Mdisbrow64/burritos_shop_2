@@ -2,12 +2,6 @@
 
 class Program
 {
-
-    /* Go to Tools > Options.
-     * In the search bar at the top left of the window, type IntelliCode.
-     * Find C# user model predictions (or "Whole line completions") and set it to Disabled.
-     * */
-
     static void Main()
     {
         bool running = true;
@@ -25,7 +19,7 @@ class Program
 
             string input = Console.ReadLine();
 
-            if (input == "1")
+			switch (input)
             {
                 using_for_loop();
             }
@@ -108,7 +102,6 @@ class Program
 
         Console.WriteLine("\nPress any key to return to menu...");
         Console.ReadKey();
-
     }
 
     // --- Using Do-While Loop ---
